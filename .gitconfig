@@ -1,0 +1,39 @@
+[user]
+	name = David Chu
+	email = thedavidchu@gmail.com
+	username = thedavidchu
+[init]
+	defaultBranch = main
+[core]
+	editor = vim
+[credential]
+	# Store credentials in the open (very insecure!)
+	helper = store
+[alias]
+	a = add
+	a-u = add -u
+	a-p = add -p
+	b = branch
+	b-a = branch -a
+	b-l = branch -l
+	b-d = branch -d
+	b-D = branch -D
+	c = commit
+	c-m = commit -m
+	c-a = commit --amend
+	co = checkout
+	co-b = checkout -b
+	d = diff
+	d-s = diff --staged
+	s = status --show-stash
+	rb = rebase
+	rb-a = rebase --abort
+	rb-c = rebase --continue
+	rb-i = rebase -i
+	rb-io = rebase -i origin/main
+	rb-r = rebase -i --root
+	l = log --graph --stat -M
+	l-g = log --graph --stat -M
+	ps-f = push --force-with-lease
+[pull]
+	ff = only
