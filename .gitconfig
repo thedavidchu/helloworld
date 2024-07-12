@@ -15,7 +15,7 @@
 	a-p = add -p
 	b = branch
 	b-a = branch -a
-	b-l = branch -l
+	b-l = for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) -       %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
 	b-d = branch -d
 	b-D = branch -D
 	c = commit
