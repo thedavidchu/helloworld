@@ -19,8 +19,8 @@
 	b-d = branch -d
 	b-D = branch -D
 	c = commit
-	c-m = commit -m
 	c-a = commit --amend
+	c-m = commit -m
 	co = checkout
 	co-b = checkout -b
 	d = diff
@@ -32,6 +32,10 @@
 	rb-i = rebase -i
 	rb-io = rebase -i origin/main
 	rb-r = rebase -i --root
+	root = rev-parse --show-toplevel
+	# I chose 'rr' simply because it is unambiguously not 'reset'.
+	rr = restore
+	rr-s = restore --staged
 	l = log --graph --stat -M
 	l-g = log --graph --stat -M
 	ps = push
@@ -39,5 +43,9 @@
 	# The short form of this is -u. This will push the branch at HEAD to origin
 	# c.f. `git push --set-upstream origin my/branch`
 	ps-u = push --set-upstream origin HEAD
+	tree = log --all --graph --decorate --oneline
+	# These aren't exactly useful
+	whereami = rev-parse --abbrev-ref HEAD
+	whoami = config user.name
 [pull]
 	ff = only
