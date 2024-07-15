@@ -34,6 +34,10 @@
 	rb-r = rebase -i --root
 	l = log --graph --stat -M
 	l-g = log --graph --stat -M
+	ps = push
 	ps-f = push --force-with-lease
+	# The short form of this is -u. This will push the branch at HEAD to origin
+	# c.f. `git push --set-upstream origin my/branch`
+	ps-u = push --set-upstream origin HEAD
 [pull]
 	ff = only
