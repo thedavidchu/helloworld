@@ -20,6 +20,8 @@
 	b-D = branch -D
 	c = commit
 	c-a = commit --amend
+	c-am = commit --all -m
+	c-f = commit --fixup=HEAD^
 	c-m = commit -m
 	co = checkout
 	co-b = checkout -b
