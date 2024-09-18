@@ -34,6 +34,7 @@
 	rb-c = rebase --continue
 	rb-i = rebase -i
 	rb-io = rebase -i origin/main
+	rb-ir = rebase -i --root
 	rb-r = rebase -i --root
 	root = rev-parse --show-toplevel
 	# I chose 'rr' simply because it is unambiguously not 'reset'.
