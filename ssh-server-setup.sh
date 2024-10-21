@@ -1,5 +1,7 @@
 #!/usr/bin/bash
 # NOTE  I haven't tested this file!
+# NOTE  I assume users use id_ed25519 instead of other algorithms.
+#       I read somewhere that RSA is weaker. 
 
 HOST="amd2025"
 HOST_NAME="128.100.241.42"
@@ -9,6 +11,7 @@ IDENTITY_FILE="~/.ssh/id_ed25519"  # This should be your private key file
 CONFIG_FILE="~/.ssh/config"
 
 # Copy your public SSH Key to the new server (assuming your account exists)
+# Template: `ssh-copy-id -i /path/to/.ssh/id_ed25519.pub david@128.100.241.42`
 ssh-copy-id -i $PUBLIC_KEY_FILE $USER@$HOST_NAME
 
 # Add this to your '.ssh/config' file:
