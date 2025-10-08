@@ -42,6 +42,7 @@
 	rr-s = restore --staged
 	l = log --graph --stat -M
 	l-g = log --graph --stat -M
+	pl = pull -p --recurse-submodules
 	ps = push
 	ps-f = push --force-with-lease
 	# The short form of this is -u. This will push the branch at HEAD to origin
